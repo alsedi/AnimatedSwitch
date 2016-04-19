@@ -70,6 +70,6 @@ switch.animationDidStop = { _ in
 ## About
 I made this switch to practice my skills in animation.
 
-The implementation inspired by Martin Todorov book [iOS Animations by Tutorials](https://www.raywenderlich.com/store/ios-animations-by-tutorials) and [Ramotion Inc. animation on Dribble](https://dribbble.com/shots/1749645-Contact-Sync). Please note that this [Ramotion Inc. provided their own implementation](https://github.com/Ramotion/paper-switch/blob/master/README.md), but it uses another approach for animation.
+The implementation inspired by Martin Todorov book [iOS Animations by Tutorials](https://www.raywenderlich.com/store/ios-animations-by-tutorials) and [Ramotion Inc. animation on Dribble](https://dribbble.com/shots/1749645-Contact-Sync). Please note that this [Ramotion Inc. provided their own implementation](https://github.com/Ramotion/paper-switch/), but it uses another approach for animation.
 
 	
