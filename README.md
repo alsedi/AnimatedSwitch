@@ -1,1 +1,75 @@
-# AnimatedSwitch
+
+#AnimatedSwitch
+[![Swift 2.2](https://img.shields.io/badge/Swift-2.2-orange.svg?style=flat)](https://developer.apple.com/swift/)
+[![InerfaceBuilder Designable](https://img.shields.io/badge/InerfaceBuilder-Designable-green.svg?style=flat)]()
+[![Twitter](https://img.shields.io/badge/Twitter-@ALSEDI-blue.svg?style=flat)](http://twitter.com/alsedi)
+
+Swift subclass of the UISwitch which paints over the parent view with the `color` if switch is turned on and returns original superview background color if switch is off. 
+
+Inspired by concept from [this Dribbble](https://dribbble.com/shots/1749645-Contact-Sync)
+
+
+#Screenshot
+![AnimatedSwitch](animatedSwitch.gif)
+
+## Requirements
+- Swift 2.2
+- iOS 9.3+
+- Xcode 7.3
+
+#Installation
+Copy `AnimatedSwitch.swift`to your project. Copy file if needed.
+
+#Usage
+AnimatedSwitch adds nice material-design-like animation to your UISwitch. 
+
+AnimatedSwitch uses custom color for state `on` and superview background color for state `off`
+
+When activated fills super view area with circle shape of specific color
+
+## How to create
+### Programatically 
+``` swift
+let switch = AnimatedSwitch()
+```
+
+### Storyboard and XIB
+1. Drap and drop a new UISwitch
+2. Set the class of the UISwitch to AnimatedSwitch
+3. Set `color` for the switch
+4. Set other parameters
+
+![Interfacebuilder](interfacebuilder.jpg)
+
+## Configurable properties (in code and in Interface Builder)
+```
+All regular UISwitch
+```
+1. `color` animation color for `on` state (`off` state uses `superview.backgroundColor`). Default `.clearColor()`
+2. `animationDuraton` how long AnimatedSwitch will draw circle to fill the superview frame. Default `0.25`
+3. `startRadius` circle radius that will be shown on screen without animation. Default `15` (to fit UISwitch size)
+4. `borderColor` border color for `on` state. Default `.colorWhite`
+5. `showBorder` should border appear around UISwitch for `on` state. Default `true`
+
+## Callbacks
+Animation started
+``` swift
+let switch = AnimatedSwitch()
+switch.animationDidStart = { _ in 
+  // do something
+}
+```
+
+Animation Finished
+``` swift
+switch.animationDidStop = { _ in 
+  // do something
+}
+```
+
+## About
+I made this switch to practice my skills in animation.
+
+The implementation inspired by Martin Todorov book [iOS Animations by Tutorials](https://www.raywenderlich.com/store/ios-animations-by-tutorials) and [Ramotion Inc. animation on Dribble](https://dribbble.com/shots/1749645-Contact-Sync). Please note that this [Ramotion Inc. provided their own implementation](https://github.com/Ramotion/paper-switch/blob/master/README.md), but it uses another approach for animation.
+
+	
