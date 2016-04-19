@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimatedSwitch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="MGV-iB-EES">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fj5-TU-5Hi">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                        <subviews>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5EW-yL-qEX" customClass="AnimatedSwitch" customModule="AnimatedSwitch" customModuleProvider="target">
+                                                <rect key="frame" x="501" y="135" width="51" height="31"/>
+                                                <color key="onTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                        <color key="value" red="0.1803921568627451" green="0.80000000000000004" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="animationDuration">
+                                                        <real key="value" value="1.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="startRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showBorder" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </switch>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="5EW-yL-qEX" secondAttribute="trailing" constant="50" id="3By-59-1sI"/>
+                                            <constraint firstItem="5EW-yL-qEX" firstAttribute="centerX" secondItem="Fj5-TU-5Hi" secondAttribute="centerX" id="4w3-g2-Heq"/>
+                                            <constraint firstItem="5EW-yL-qEX" firstAttribute="top" secondItem="Fj5-TU-5Hi" secondAttribute="top" constant="20" id="6J6-X2-29d"/>
+                                            <constraint firstItem="5EW-yL-qEX" firstAttribute="centerX" secondItem="Fj5-TU-5Hi" secondAttribute="centerX" id="7vG-YQ-XgJ"/>
+                                            <constraint firstItem="5EW-yL-qEX" firstAttribute="centerY" secondItem="Fj5-TU-5Hi" secondAttribute="centerY" constant="25" id="9kN-zy-aLJ"/>
+                                            <constraint firstItem="5EW-yL-qEX" firstAttribute="centerY" secondItem="Fj5-TU-5Hi" secondAttribute="centerY" id="9mQ-es-fz5"/>
+                                            <constraint firstItem="5EW-yL-qEX" firstAttribute="leading" secondItem="Fj5-TU-5Hi" secondAttribute="leading" constant="125" id="dB8-7B-6Dc"/>
+                                            <constraint firstItem="5EW-yL-qEX" firstAttribute="centerY" secondItem="Fj5-TU-5Hi" secondAttribute="centerY" id="rms-TM-cQm"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="4w3-g2-Heq"/>
+                                                <exclude reference="6J6-X2-29d"/>
+                                                <exclude reference="7vG-YQ-XgJ"/>
+                                                <exclude reference="9kN-zy-aLJ"/>
+                                                <exclude reference="dB8-7B-6Dc"/>
+                                                <exclude reference="rms-TM-cQm"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rVq-Ca-ajy">
+                                        <rect key="frame" x="0.0" y="300" width="600" height="300"/>
+                                        <subviews>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cYg-Vy-uw7" customClass="AnimatedSwitch" customModule="AnimatedSwitch" customModuleProvider="target">
+                                                <rect key="frame" x="501" y="135" width="51" height="31"/>
+                                                <color key="onTintColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                        <color key="value" red="0.16078431372549018" green="0.50196078431372548" blue="0.72549019607843135" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="animationDuration">
+                                                        <real key="value" value="0.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="startRadius">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showBorder" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </switch>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="cYg-Vy-uw7" firstAttribute="centerY" secondItem="rVq-Ca-ajy" secondAttribute="centerY" id="c4j-pU-zHK"/>
+                                            <constraint firstItem="cYg-Vy-uw7" firstAttribute="centerX" secondItem="rVq-Ca-ajy" secondAttribute="centerX" id="gY6-Zi-aoD"/>
+                                            <constraint firstAttribute="trailing" secondItem="cYg-Vy-uw7" secondAttribute="trailing" constant="50" id="iVT-ob-a50"/>
+                                            <constraint firstAttribute="trailing" secondItem="cYg-Vy-uw7" secondAttribute="trailing" constant="100" id="q2J-NZ-Nsn"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="gY6-Zi-aoD"/>
+                                                <exclude reference="q2J-NZ-Nsn"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MGV-iB-EES" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KdG-IT-fxg"/>
+                            <constraint firstItem="MGV-iB-EES" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Mq6-RR-VkP"/>
+                            <constraint firstItem="MGV-iB-EES" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="gNV-TW-CST"/>
+                            <constraint firstItem="MGV-iB-EES" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u9U-Tr-3sS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="animatedSwitch" destination="5EW-yL-qEX" id="RNd-eR-p58"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
