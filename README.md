@@ -39,7 +39,7 @@ let switch = AnimatedSwitch()
 3. Set `color` for the switch
 4. Set other parameters
 
-![Interfacebuilder](interfacebuilder.jpg)
+![Interfacebuilder](InterfaceBuilder.png)
 
 ## Configurable properties (in code and in Interface Builder)
 ```
