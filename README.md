@@ -10,7 +10,7 @@ Inspired by concept from [this Dribbble](https://dribbble.com/shots/1749645-Cont
 
 
 #Screenshot
-![AnimatedSwitch](animatedSwitch.gif)
+![AnimatedSwitch](animation2.gif)
 
 ## Requirements
 - Swift 2.2
