@@ -1,7 +1,7 @@
 
 #AnimatedSwitch
 [![Swift 2.2](https://img.shields.io/badge/Swift-2.2-orange.svg?style=flat)](https://developer.apple.com/swift/)
-[![InerfaceBuilder Designable](https://img.shields.io/badge/InerfaceBuilder-Designable-green.svg?style=flat)]()
+[![InterfaceBuilder Designable](https://img.shields.io/badge/InterfaceBuilder-Designable-green.svg?style=flat)]()
 [![Twitter](https://img.shields.io/badge/Twitter-@ALSEDI-blue.svg?style=flat)](http://twitter.com/alsedi)
 
 Swift subclass of the UISwitch which paints over the parent view with the `color` if switch is turned on and returns original superview background color if switch is off. 
