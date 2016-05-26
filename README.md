@@ -50,7 +50,7 @@ All regular UISwitch
 3. `startRadius` circle radius that will be shown on screen without animation. Default `15` (to fit UISwitch size)
 4. `borderColor` border color for `on` state. Default `.colorWhite`
 5. `showBorder` should border appear around UISwitch for `on` state. Default `true`
-6. `shape` filling shape: `.Round`, `.Star`, `.Dimond` or `.Cusom(UIBezierPath)`. Default `.Round`
+6. `shape` filling shape: `.Round`, `.Star`, `.Dimond` or `.Cusom(UIBezierPath)`. Default `.Round` (NB! Can be set in code only)
 
 ## Callbacks
 Animation started
