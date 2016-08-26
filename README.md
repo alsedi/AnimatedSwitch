@@ -1,6 +1,6 @@
 
 #AnimatedSwitch
-[![Swift 2.2](https://img.shields.io/badge/Swift-2.2-orange.svg?style=flat)](https://developer.apple.com/swift/)
+[![Swift 2.3](https://img.shields.io/badge/Swift-2.3-orange.svg?style=flat)](https://developer.apple.com/swift/)
 [![InterfaceBuilder Designable](https://img.shields.io/badge/InterfaceBuilder-Designable-green.svg?style=flat)]()
 [![Twitter](https://img.shields.io/badge/Twitter-@ALSEDI-blue.svg?style=flat)](http://twitter.com/alsedi)
 [![Blog](https://img.shields.io/badge/Blog-@ALSEDI-green.svg?style=flat)](http://blog.alsedi.com)
@@ -14,9 +14,9 @@ Inspired by concept from [this Dribbble](https://dribbble.com/shots/1749645-Cont
 ![AnimatedSwitch](animation2.gif)
 
 ## Requirements
-- Swift 2.2
+- Swift 2.3
 - iOS 9.3+
-- Xcode 7.3
+- Xcode 7.3+
 
 #Installation
 Copy `AnimatedSwitch.swift`to your project. Copy file if needed.
