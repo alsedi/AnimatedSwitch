@@ -28,16 +28,16 @@ import QuartzCore
 typealias VoidClosure = () -> ()
 
 enum AnimatedSwitchShapeType {
-    case Round
-    case Diamond
-    case Star
-    case Custom(UIBezierPath)
+    case round
+    case diamond
+    case star
+    case custom(UIBezierPath)
 }
 
 extension AnimatedSwitchShapeType {
     
-    private func polygon(inCircleOfRadius radius: Double, vertices: Int, offset: Double = 0) -> [CGPoint] {
-        let step = M_PI * 2 / Double(vertices)
+    fileprivate func polygon(inCircleOfRadius radius: Double, vertices: Int, offset: Double = 0) -> [CGPoint] {
+        let step = .pi * 2 / Double(vertices)
         let x: Double = 0
         let y: Double = 0
         var points = [CGPoint]()
@@ -49,92 +49,85 @@ extension AnimatedSwitchShapeType {
         return points
     }
     
-    private func starShape(radius: Double, vertices: Int) -> UIBezierPath {
+    fileprivate func starShape(_ radius: Double, vertices: Int) -> UIBezierPath {
         let path = UIBezierPath()
         let externalVertices = polygon(inCircleOfRadius: radius, vertices: vertices)
         let internalVertices = polygon(inCircleOfRadius: radius/2, vertices: vertices, offset: 0.5)
         
         if (externalVertices.count >= 3){
-            path.moveToPoint(externalVertices[0])
+            path.move(to: externalVertices[0])
             for i in 0..<externalVertices.count-1 {
-               path.addLineToPoint(internalVertices[i])
-               path.addLineToPoint(externalVertices[i + 1])
+               path.addLine(to: internalVertices[i])
+               path.addLine(to: externalVertices[i + 1])
             }
-            path.closePath()
+            path.close()
         }
         return path
     }
     
-    func scaleFactor(from: Double, to: CGRect) -> CGFloat {
+    func scaleFactor(_ from: Double, to: CGRect) -> CGFloat {
         var endRadius: CGFloat = sqrt(to.width * to.width + to.height * to.height) / 2
-        print("From \(from)")
-        print("Initial \(endRadius)")
-        
         switch (self) {
-        case .Star:
+        case .star:
             endRadius = endRadius / 2
         default:
             break
         }
-        print("Adjusted \(endRadius)")
-        print("Mult \(endRadius / CGFloat(from))")
-
-        
         return endRadius / CGFloat(from)
     }
     
-    func bezierPathInRect(rect: CGRect) -> UIBezierPath {
+    func bezierPathInRect(_ rect: CGRect) -> UIBezierPath {
         let centerX = rect.origin.x + rect.width / 2
         let centerY = rect.origin.y + rect.height / 2
         let size = sqrt(rect.width * rect.width / 4 + rect.height *  rect.height / 4)
         switch self {
-        case .Diamond:
-            let path = UIBezierPath(rect: CGRectMake(0, 0, size, size));
-            path.applyTransform(CGAffineTransformConcat(CGAffineTransformMakeRotation(CGFloat(M_PI_4)), CGAffineTransformMakeTranslation(centerX, rect.origin.y)))
+        case .diamond:
+            let path = UIBezierPath(rect: CGRect(x: 0, y: 0, width: size, height: size));
+            path.apply(CGAffineTransform(rotationAngle: CGFloat.pi/4).concatenating(CGAffineTransform(translationX: centerX, y: rect.origin.y)))
             return path
-        case .Star:
+        case .star:
             let path = starShape(Double(50), vertices: 5)
-            path.applyTransform(CGAffineTransformMakeTranslation(centerX, centerY))
+            path.apply(CGAffineTransform(translationX: centerX, y: centerY))
             return path
-        case .Custom(let path):
-            path.applyTransform(CGAffineTransformMakeTranslation(centerX, centerY))
+        case .custom(let path):
+            path.apply(CGAffineTransform(translationX: centerX, y: centerY))
             return path
         default:
-            return UIBezierPath(ovalInRect: rect)
+            return UIBezierPath(ovalIn: rect)
         }
     }
 }
 
 @IBDesignable class AnimatedSwitch: UISwitch {
-    private var originalParentBackground: UIColor?
-    private var toColor: UIColor?
-    private let animationIdentificator = "animatedSwitch"
-    private let containerLayer = CAShapeLayer()
+    fileprivate var originalParentBackground: UIColor?
+    fileprivate var toColor: UIColor?
+    fileprivate let animationIdentificator = "animatedSwitch"
+    fileprivate let containerLayer = CAShapeLayer()
     
-    @IBInspectable var color: UIColor = UIColor.clearColor()
+    @IBInspectable var color: UIColor = UIColor.clear
     @IBInspectable var startRadius: Double = 15
     @IBInspectable var animationDuration: Double = 0.25
     
     @IBInspectable var showBorder: Bool = true
-    @IBInspectable var borderColor: UIColor = UIColor.whiteColor()
+    @IBInspectable var borderColor: UIColor = UIColor.white
     
-    var shape: AnimatedSwitchShapeType = .Diamond
+    var shape: AnimatedSwitchShapeType = .diamond
     
     
     var isAnimating: Bool = false
     var animationDidStart: VoidClosure?
     var animationDidStop: VoidClosure?
     
-    private func setupView(parent: UIView) {
-        removeTarget(self, action: #selector(AnimatedSwitch.valueChanged), forControlEvents: .ValueChanged)
-        addTarget(self, action: #selector(AnimatedSwitch.valueChanged), forControlEvents: .ValueChanged)
+    fileprivate func setupView(_ parent: UIView) {
+        removeTarget(self, action: #selector(AnimatedSwitch.valueChanged), for: .valueChanged)
+        addTarget(self, action: #selector(AnimatedSwitch.valueChanged), for: .valueChanged)
         containerLayer.anchorPoint = CGPoint(x: 0, y: 0)
         containerLayer.masksToBounds = true
         
-        parent.layer.insertSublayer(containerLayer, atIndex: 0)
+        parent.layer.insertSublayer(containerLayer, at: 0)
     }
     
-    override func willMoveToSuperview(newSuperview: UIView?) {
+    override func willMove(toSuperview newSuperview: UIView?) {
         if let parent = newSuperview {
             setupView(parent)
             originalParentBackground = parent.backgroundColor
@@ -144,10 +137,10 @@ extension AnimatedSwitchShapeType {
     override func layoutSubviews() {
         guard let parent = superview else { return }
         containerLayer.frame = CGRect(x: 0, y: 0, width: parent.frame.width, height: parent.frame.height)
-        if on {
-            containerLayer.backgroundColor = color.CGColor
+        if isOn {
+            containerLayer.backgroundColor = color.cgColor
         } else {
-            containerLayer.backgroundColor = originalParentBackground?.CGColor
+            containerLayer.backgroundColor = originalParentBackground?.cgColor
         }
         
         drawBorder()
@@ -156,7 +149,7 @@ extension AnimatedSwitchShapeType {
     func valueChanged() {
         guard let parent = superview else { return }
         
-        if on {
+        if isOn {
             toColor = color
         } else {
             toColor = parent.backgroundColor
@@ -164,29 +157,29 @@ extension AnimatedSwitchShapeType {
         
         guard let _ = toColor else { return }
         
-        let correctedFrame = CGRectMake(center.x - CGFloat(startRadius), center.y - CGFloat(startRadius), CGFloat(startRadius) * 2, CGFloat(startRadius) * 2)
+        let correctedFrame = CGRect(x: center.x - CGFloat(startRadius), y: center.y - CGFloat(startRadius), width: CGFloat(startRadius) * 2, height: CGFloat(startRadius) * 2)
         
         let layer = CAShapeLayer()
         layer.removeAllAnimations()
         layer.bounds = correctedFrame
-        layer.path = shape.bezierPathInRect(correctedFrame).CGPath
+        layer.path = shape.bezierPathInRect(correctedFrame).cgPath
         layer.position = self.center
         layer.lineWidth = 0
-        layer.fillColor = toColor!.CGColor
+        layer.fillColor = toColor!.cgColor
         containerLayer.addSublayer(layer)
         
         let animation = CABasicAnimation(keyPath: "transform")
-        animation.duration = NSTimeInterval(animationDuration)
-        animation.fromValue = NSValue(CATransform3D: CATransform3DIdentity)
+        animation.duration = TimeInterval(animationDuration)
+        animation.fromValue = NSValue(caTransform3D: CATransform3DIdentity)
         
         let multiplicator = shape.scaleFactor(startRadius / 2, to: parent.frame)
-        animation.toValue = NSValue(CATransform3D: CATransform3DMakeScale(multiplicator, multiplicator, 1))
+        animation.toValue = NSValue(caTransform3D: CATransform3DMakeScale(multiplicator, multiplicator, 1))
         animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
         animation.delegate = self
         animation.setValue(layer, forKey: "animationLayer")
         animation.fillMode = kCAFillModeForwards;
-        animation.removedOnCompletion = false
-        layer.addAnimation(animation, forKey: animationIdentificator)
+        animation.isRemovedOnCompletion = false
+        layer.add(animation, forKey: animationIdentificator)
         
         isAnimating = true
         
@@ -196,14 +189,16 @@ extension AnimatedSwitchShapeType {
         
         drawBorder()
     }
-    
-    override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
+}
+
+extension AnimatedSwitch: CAAnimationDelegate {
+    func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
         CATransaction.begin()
         CATransaction.setDisableActions(true)
-        containerLayer.backgroundColor = toColor?.CGColor
+        containerLayer.backgroundColor = toColor?.cgColor
         CATransaction.commit()
         
-        if let layer = anim.valueForKey("animationLayer") {
+        if let layer = anim.value(forKey: "animationLayer") as? CALayer {
             layer.removeFromSuperlayer()
             isAnimating = false
         }
@@ -214,9 +209,9 @@ extension AnimatedSwitchShapeType {
     }
     
     func drawBorder() {
-        if showBorder && on {
+        if showBorder && isOn {
             self.layer.borderWidth = 0.5
-            self.layer.borderColor = self.borderColor.CGColor;
+            self.layer.borderColor = self.borderColor.cgColor;
             self.layer.cornerRadius = frame.size.height / 2;
         } else {
             self.layer.borderWidth = 0

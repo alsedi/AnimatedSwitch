@@ -9,7 +9,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
     @IBOutlet weak var topSwitch: AnimatedSwitch!
     @IBOutlet weak var middleSwitch: AnimatedSwitch!
     @IBOutlet weak var bottomSwitch: AnimatedSwitch!
@@ -21,9 +20,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         
-        topSwitch.shape = .Star
-        middleSwitch.shape = .Diamond
-        bottomSwitch.shape = .Round
+        topSwitch.shape = .star
+        middleSwitch.shape = .diamond
+        bottomSwitch.shape = .round
         
         /*
          You may set both or only one callback for animation events
@@ -41,8 +40,8 @@ class ViewController: UIViewController {
         middleSwitch.animationDidStart = { _ in
             print("Switch at the middle: Animation started (Duration: \(self.topSwitch.animationDuration))")
             
-            UIView.transitionWithView(self.middleLabel, duration: self.middleSwitch.animationDuration, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: {
-                self.middleLabel.textColor = !self.middleSwitch.on ? UIColor.whiteColor() : UIColor.blackColor()
+            UIView.transition(with: self.middleLabel, duration: self.middleSwitch.animationDuration, options: UIViewAnimationOptions.transitionCrossDissolve, animations: {
+                self.middleLabel.textColor = !self.middleSwitch.isOn ? UIColor.white : UIColor.black
                 }, completion: nil)
         }
         
