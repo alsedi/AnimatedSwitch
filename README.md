@@ -14,7 +14,7 @@ Inspired by concept from [this Dribbble](https://dribbble.com/shots/1749645-Cont
 ![AnimatedSwitch](animation2.gif)
 
 ## Requirements
-- Swift 2.3
+- Swift 3.1
 - iOS 9.3+
 - Xcode 7.3+
 
