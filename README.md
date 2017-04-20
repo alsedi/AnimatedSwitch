@@ -1,5 +1,5 @@
 
-#AnimatedSwitch
+# AnimatedSwitch
 [![Swift 2.3](https://img.shields.io/badge/Swift-2.3-orange.svg?style=flat)](https://developer.apple.com/swift/)
 [![InterfaceBuilder Designable](https://img.shields.io/badge/InterfaceBuilder-Designable-green.svg?style=flat)]()
 [![Twitter](https://img.shields.io/badge/Twitter-@ALSEDI-blue.svg?style=flat)](http://twitter.com/alsedi)
@@ -10,7 +10,7 @@ Swift subclass of the UISwitch which paints over the parent view with the `color
 Inspired by concept from [this Dribbble](https://dribbble.com/shots/1749645-Contact-Sync)
 
 
-#Screenshot
+# Screenshot
 ![AnimatedSwitch](animation2.gif)
 
 ## Requirements
@@ -18,10 +18,10 @@ Inspired by concept from [this Dribbble](https://dribbble.com/shots/1749645-Cont
 - iOS 9.3+
 - Xcode 7.3+
 
-#Installation
+# Installation
 Copy `AnimatedSwitch.swift`to your project. Copy file if needed.
 
-#Usage
+# Usage
 AnimatedSwitch adds nice material-design-like animation to your UISwitch. 
 
 AnimatedSwitch uses custom color for state `on` and superview background color for state `off`
