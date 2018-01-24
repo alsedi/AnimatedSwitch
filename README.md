@@ -57,14 +57,14 @@ All regular UISwitch
 Animation started
 ``` swift
 let switch = AnimatedSwitch()
-switch.animationDidStart = { _ in 
+switch.animationDidStart = {
   // do something
 }
 ```
 
 Animation Finished
 ``` swift
-switch.animationDidStop = { _ in 
+switch.animationDidStop = {  
   // do something
 }
 ```
