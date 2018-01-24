@@ -27,17 +27,17 @@ class ViewController: UIViewController {
         /*
          You may set both or only one callback for animation events
          */
-        topSwitch.animationDidStart = { _ in
+        topSwitch.animationDidStart = {
             print("Switch at the top: Animation started (Duration: \(self.topSwitch.animationDuration))")
 
         }
         
-        topSwitch.animationDidStop = { _ in
+        topSwitch.animationDidStop = {
             print("Switch at the top: Animation finished")
         }
         
         
-        middleSwitch.animationDidStart = { _ in
+        middleSwitch.animationDidStart = {
             print("Switch at the middle: Animation started (Duration: \(self.topSwitch.animationDuration))")
             
             UIView.transition(with: self.middleLabel, duration: self.middleSwitch.animationDuration, options: UIViewAnimationOptions.transitionCrossDissolve, animations: {
@@ -48,7 +48,7 @@ class ViewController: UIViewController {
         /*
          Here is only animation stop event
          */
-        bottomSwitch.animationDidStop = { _ in
+        bottomSwitch.animationDidStop = { 
             print("Switch at the bottom: Animation finished")
         }
         

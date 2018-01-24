@@ -146,7 +146,7 @@ extension AnimatedSwitchShapeType {
         drawBorder()
     }
     
-    func valueChanged() {
+    @objc func valueChanged() {
         guard let parent = superview else { return }
         
         if isOn {
