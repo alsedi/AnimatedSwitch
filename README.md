@@ -1,6 +1,6 @@
 
 # AnimatedSwitch
-[![Swift 3.1](https://img.shields.io/badge/Swift-3.1-orange.svg?style=flat)](https://developer.apple.com/swift/)
+[![Swift 4](https://img.shields.io/badge/Swift-4-orange.svg?style=flat)](https://developer.apple.com/swift/)
 [![InterfaceBuilder Designable](https://img.shields.io/badge/InterfaceBuilder-Designable-green.svg?style=flat)]()
 [![Twitter](https://img.shields.io/badge/Twitter-@ALSEDI-blue.svg?style=flat)](http://twitter.com/alsedi)
 [![Blog](https://img.shields.io/badge/Blog-@ALSEDI-green.svg?style=flat)](http://blog.alsedi.com)
@@ -14,7 +14,7 @@ Inspired by concept from [this Dribbble](https://dribbble.com/shots/1749645-Cont
 ![AnimatedSwitch](animation2.gif)
 
 ## Requirements
-- Swift 3.1
+- Swift 3.2
 - iOS 9.3+
 - Xcode 7.3+
 
@@ -57,14 +57,14 @@ All regular UISwitch
 Animation started
 ``` swift
 let switch = AnimatedSwitch()
-switch.animationDidStart = { _ in 
+switch.animationDidStart = {
   // do something
 }
 ```
 
 Animation Finished
 ``` swift
-switch.animationDidStop = { _ in 
+switch.animationDidStop = {  
   // do something
 }
 ```
