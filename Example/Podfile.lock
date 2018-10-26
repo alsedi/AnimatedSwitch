@@ -1,0 +1,16 @@
+PODS:
+  - AnimatedSwitch (0.1.0)
+
+DEPENDENCIES:
+  - AnimatedSwitch (from `../`)
+
+EXTERNAL SOURCES:
+  AnimatedSwitch:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AnimatedSwitch: a3279790ef5f84326079f9b7a8d3f24f2365283b
+
+PODFILE CHECKSUM: b6ba5d3980f87d2f21429051edf9a5f5daf376c5
+
+COCOAPODS: 1.5.3

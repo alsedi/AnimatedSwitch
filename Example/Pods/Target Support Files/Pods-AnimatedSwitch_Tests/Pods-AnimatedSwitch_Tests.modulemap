@@ -1,0 +1,6 @@
+framework module Pods_AnimatedSwitch_Tests {
+  umbrella header "Pods-AnimatedSwitch_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

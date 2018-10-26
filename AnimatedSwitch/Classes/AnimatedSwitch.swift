@@ -25,9 +25,9 @@
 import UIKit
 import QuartzCore
 
-typealias VoidClosure = () -> ()
+public typealias VoidClosure = () -> ()
 
-struct AnimatedSwitchConstants {
+public struct AnimatedSwitchConstants {
     static let animationIdentificator = "animatedSwitch"
     static let defaultBorderWidth: CGFloat = 0.5
     
@@ -35,14 +35,14 @@ struct AnimatedSwitchConstants {
     static let animationLayerKey = "animationLayer"
 }
 
-enum AnimatedSwitchShapeType {
+public enum AnimatedSwitchShapeType {
     case round
     case diamond
     case star
     case custom(UIBezierPath)
 }
 
-extension AnimatedSwitchShapeType {
+public extension AnimatedSwitchShapeType {
     
     private func polygon(inCircleOfRadius radius: Double, vertices: Int, offset: Double = 0) -> [CGPoint] {
         let step = .pi * 2 / Double(vertices)
@@ -65,8 +65,8 @@ extension AnimatedSwitchShapeType {
         if externalVertices.count >= 3 {
             path.move(to: externalVertices[0])
             for i in 0..<externalVertices.count-1 {
-               path.addLine(to: internalVertices[i])
-               path.addLine(to: externalVertices[i + 1])
+                path.addLine(to: internalVertices[i])
+                path.addLine(to: externalVertices[i + 1])
             }
             path.close()
         }
@@ -106,7 +106,7 @@ extension AnimatedSwitchShapeType {
     }
 }
 
-@IBDesignable class AnimatedSwitch: UISwitch {
+@IBDesignable public class AnimatedSwitch: UISwitch {
     
     private var originalParentBackground: UIColor?
     private var toColor: UIColor?
@@ -115,17 +115,17 @@ extension AnimatedSwitchShapeType {
     
     @IBInspectable var color: UIColor = .clear
     @IBInspectable var startRadius: Double = 15
-    @IBInspectable var animationDuration: Double = 0.25
+    @IBInspectable public var animationDuration: Double = 0.25
     
     @IBInspectable var showBorder: Bool = true
     @IBInspectable var borderColor: UIColor = .white
     
-    var shape: AnimatedSwitchShapeType = .diamond
+    public var shape: AnimatedSwitchShapeType = .diamond
     
     
-    var isAnimating: Bool = false
-    var animationDidStart: VoidClosure?
-    var animationDidStop: VoidClosure?
+    public var isAnimating: Bool = false
+    public var animationDidStart: VoidClosure?
+    public var animationDidStop: VoidClosure?
     
     private func setupView(_ parent: UIView) {
         removeTarget(self, action: #selector(AnimatedSwitch.valueChanged), for: .valueChanged)
@@ -136,14 +136,14 @@ extension AnimatedSwitchShapeType {
         parent.layer.insertSublayer(containerLayer, at: 0)
     }
     
-    override func willMove(toSuperview newSuperview: UIView?) {
+    override public func willMove(toSuperview newSuperview: UIView?) {
         if let parent = newSuperview {
             setupView(parent)
             originalParentBackground = parent.backgroundColor
         }
     }
     
-    override func layoutSubviews() {
+    override public func layoutSubviews() {
         guard let parent = superview else { return }
         containerLayer.frame = CGRect(x: 0, y: 0, width: parent.frame.width, height: parent.frame.height)
         if isOn {
@@ -202,7 +202,7 @@ extension AnimatedSwitchShapeType {
 
 extension AnimatedSwitch: CAAnimationDelegate {
     
-    func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
+    private func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
         CATransaction.begin()
         CATransaction.setDisableActions(true)
         containerLayer.backgroundColor = toColor?.cgColor

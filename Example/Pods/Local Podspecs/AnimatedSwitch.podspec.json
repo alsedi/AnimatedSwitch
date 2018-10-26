@@ -1,0 +1,22 @@
+{
+  "name": "AnimatedSwitch",
+  "version": "0.1.0",
+  "summary": "A short description of AnimatedSwitch.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Steven Rockarts/AnimatedSwitch",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Steven Rockarts": "stevenrockarts@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Steven Rockarts/AnimatedSwitch.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "AnimatedSwitch/Classes/**/*"
+}

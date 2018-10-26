@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AnimatedSwitch_Example' do
+  pod 'AnimatedSwitch', :path => '../'
+
+  target 'AnimatedSwitch_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
