@@ -1,0 +1,750 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A03C5A196D64F5A3678E2983289915E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		1D1EAEC5508198F6AA056B3031BAC9A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		2E67F56465903D862EC3AC7EA2807C9E /* AnimatedSwitch-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 296405A91D9CE827DEB6DCF4F565B7D4 /* AnimatedSwitch-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		356E8F25E95D5325B60033E4FFC924E0 /* Pods-AnimatedSwitch_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA5259129AA500781120CA061BD8134 /* Pods-AnimatedSwitch_Example-dummy.m */; };
+		48DF35097D797F0487BEFB63F15EF879 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		78D7C45188E43264F29D9B6AAF45C240 /* Pods-AnimatedSwitch_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C49EA012ADB42CD5456EAE276218117 /* Pods-AnimatedSwitch_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EABCBB89CD8B4A9C0500221271EA9CA /* AnimatedSwitch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFAA63D239F0521D29CE42BB7E987F9 /* AnimatedSwitch-dummy.m */; };
+		9330622A5E05310D279973F3F92119E0 /* Pods-AnimatedSwitch_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 905C2E783B9642E58B3D914E967E2278 /* Pods-AnimatedSwitch_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0EACBFE2183678C0061CB26 /* AnimatedSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EACBFD2183678C0061CB26 /* AnimatedSwitch.swift */; };
+		F3C32C9DBDC6F48F3936EF188E32AEA8 /* Pods-AnimatedSwitch_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085AADCA5DD77B17E6A602C51CBD194 /* Pods-AnimatedSwitch_Tests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6E554729C1B917F2596816588504D458 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BA88FB2683E2E1BD33EB2E2479D6DB0;
+			remoteInfo = "Pods-AnimatedSwitch_Example";
+		};
+		C35D4A7B376760B95C4C9D6D691B39E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C220E6373F2E48A68FC34D5988D6C67;
+			remoteInfo = AnimatedSwitch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0085AADCA5DD77B17E6A602C51CBD194 /* Pods-AnimatedSwitch_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AnimatedSwitch_Tests-dummy.m"; sourceTree = "<group>"; };
+		08E0A664214EBCEDE0C7844CC80EAA3D /* Pods-AnimatedSwitch_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AnimatedSwitch_Example.modulemap"; sourceTree = "<group>"; };
+		1579B0CBD66B2F209C92D6F54CCAB469 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1619E1D181791FB63DB05957D0953764 /* Pods-AnimatedSwitch_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AnimatedSwitch_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		167742C98909693520D90E2A47123B3D /* Pods-AnimatedSwitch_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnimatedSwitch_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		222B8C7F6629174BBA5368498E8D1D0D /* AnimatedSwitch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AnimatedSwitch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26FA60F30A44A15C80A14C420F400ED9 /* Pods-AnimatedSwitch_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnimatedSwitch_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		296405A91D9CE827DEB6DCF4F565B7D4 /* AnimatedSwitch-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AnimatedSwitch-umbrella.h"; sourceTree = "<group>"; };
+		2DA5259129AA500781120CA061BD8134 /* Pods-AnimatedSwitch_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AnimatedSwitch_Example-dummy.m"; sourceTree = "<group>"; };
+		2E13D20B42CA6424E2363882A89BFCB4 /* Pods_AnimatedSwitch_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimatedSwitch_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FBF1FF5C718435DA80132F157AF0053 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		354287470B2C4AEE1182784AFE574BC9 /* Pods-AnimatedSwitch_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AnimatedSwitch_Example-resources.sh"; sourceTree = "<group>"; };
+		45027AF41908E402C9DB1FCA39919CA3 /* Pods-AnimatedSwitch_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnimatedSwitch_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		4D6ABE9B9B93F6B88AE4FD86EC6190F2 /* AnimatedSwitch.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AnimatedSwitch.xcconfig; sourceTree = "<group>"; };
+		5C49EA012ADB42CD5456EAE276218117 /* Pods-AnimatedSwitch_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AnimatedSwitch_Tests-umbrella.h"; sourceTree = "<group>"; };
+		5D9CB5874C151DE6647EB63F2F836B3D /* Pods_AnimatedSwitch_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimatedSwitch_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003C25A9DDA9DDF96BE59645C010875 /* AnimatedSwitch-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AnimatedSwitch-prefix.pch"; sourceTree = "<group>"; };
+		6085A6BA6F108EE188EAB0431889C076 /* Pods-AnimatedSwitch_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AnimatedSwitch_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6BBDA7FB2EC44BA00D67054B2BEB577E /* Pods-AnimatedSwitch_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AnimatedSwitch_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		703AF3DB42D485DC67CEB3DEBA11A978 /* AnimatedSwitch.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AnimatedSwitch.modulemap; sourceTree = "<group>"; };
+		8D0EB7DED13B20B5DC8D79D69A70F902 /* AnimatedSwitch.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = AnimatedSwitch.podspec; sourceTree = "<group>"; };
+		905C2E783B9642E58B3D914E967E2278 /* Pods-AnimatedSwitch_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AnimatedSwitch_Example-umbrella.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94AE2457943CA0BBB008DCF34A41EB6E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		AEC8D3787429EFFCDBBAFD17BF2F78C1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0EACBFD2183678C0061CB26 /* AnimatedSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimatedSwitch.swift; path = AnimatedSwitch/Classes/AnimatedSwitch.swift; sourceTree = "<group>"; };
+		BCC3F6202F09CD241DDC4F9A03791953 /* Pods-AnimatedSwitch_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AnimatedSwitch_Tests.modulemap"; sourceTree = "<group>"; };
+		BEFAA63D239F0521D29CE42BB7E987F9 /* AnimatedSwitch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AnimatedSwitch-dummy.m"; sourceTree = "<group>"; };
+		C9C14A09B3F6C1F59CC62027245C09CB /* Pods-AnimatedSwitch_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AnimatedSwitch_Tests-resources.sh"; sourceTree = "<group>"; };
+		CDA81764D1771EAB972D21E0801295DA /* Pods-AnimatedSwitch_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AnimatedSwitch_Example-frameworks.sh"; sourceTree = "<group>"; };
+		D177EF90F38C1F3DE621B9A9ED73BDAA /* Pods-AnimatedSwitch_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnimatedSwitch_Example.release.xcconfig"; sourceTree = "<group>"; };
+		D6A7F822DBFDCCE0447A5BA6D8D7E5CB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		DF12F315D3BED63334DB36D47B572033 /* Pods-AnimatedSwitch_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AnimatedSwitch_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		FAC88C46C4A1EB65B745D62862C65C18 /* Pods-AnimatedSwitch_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AnimatedSwitch_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2559C748EC4BA1A46FD2E104D10771C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A03C5A196D64F5A3678E2983289915E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81F0587FF77E0D4D00985F6370E622E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48DF35097D797F0487BEFB63F15EF879 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DB3118CCA241F4C8119E6FB1DF2AAA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D1EAEC5508198F6AA056B3031BAC9A9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12E8264681CEB21B525EE408F102B1F2 /* AnimatedSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				B0EACBFD2183678C0061CB26 /* AnimatedSwitch.swift */,
+				495F9EB8732EE8D7309B2331424CA00E /* Pod */,
+				9479F9D4BB3C12D5DF9DC797A3DF9AF0 /* Support Files */,
+			);
+			name = AnimatedSwitch;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		32EC2DA61AAA6D8E1C015C29C28E69E2 /* Pods-AnimatedSwitch_Example */ = {
+			isa = PBXGroup;
+			children = (
+				AEC8D3787429EFFCDBBAFD17BF2F78C1 /* Info.plist */,
+				08E0A664214EBCEDE0C7844CC80EAA3D /* Pods-AnimatedSwitch_Example.modulemap */,
+				1619E1D181791FB63DB05957D0953764 /* Pods-AnimatedSwitch_Example-acknowledgements.markdown */,
+				DF12F315D3BED63334DB36D47B572033 /* Pods-AnimatedSwitch_Example-acknowledgements.plist */,
+				2DA5259129AA500781120CA061BD8134 /* Pods-AnimatedSwitch_Example-dummy.m */,
+				CDA81764D1771EAB972D21E0801295DA /* Pods-AnimatedSwitch_Example-frameworks.sh */,
+				354287470B2C4AEE1182784AFE574BC9 /* Pods-AnimatedSwitch_Example-resources.sh */,
+				905C2E783B9642E58B3D914E967E2278 /* Pods-AnimatedSwitch_Example-umbrella.h */,
+				45027AF41908E402C9DB1FCA39919CA3 /* Pods-AnimatedSwitch_Example.debug.xcconfig */,
+				D177EF90F38C1F3DE621B9A9ED73BDAA /* Pods-AnimatedSwitch_Example.release.xcconfig */,
+			);
+			name = "Pods-AnimatedSwitch_Example";
+			path = "Target Support Files/Pods-AnimatedSwitch_Example";
+			sourceTree = "<group>";
+		};
+		495F9EB8732EE8D7309B2331424CA00E /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				8D0EB7DED13B20B5DC8D79D69A70F902 /* AnimatedSwitch.podspec */,
+				D6A7F822DBFDCCE0447A5BA6D8D7E5CB /* LICENSE */,
+				94AE2457943CA0BBB008DCF34A41EB6E /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		73B0EBDA4BB8EC7479588B06821C6229 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				32EC2DA61AAA6D8E1C015C29C28E69E2 /* Pods-AnimatedSwitch_Example */,
+				8F41A66DE206A48CCCCF675555D96244 /* Pods-AnimatedSwitch_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				E52BC33DBE41E57503B2ED447123C3EF /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				AC176F86FFEC8FD4ABEFD928FC94781C /* Products */,
+				73B0EBDA4BB8EC7479588B06821C6229 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8F41A66DE206A48CCCCF675555D96244 /* Pods-AnimatedSwitch_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2FBF1FF5C718435DA80132F157AF0053 /* Info.plist */,
+				BCC3F6202F09CD241DDC4F9A03791953 /* Pods-AnimatedSwitch_Tests.modulemap */,
+				6085A6BA6F108EE188EAB0431889C076 /* Pods-AnimatedSwitch_Tests-acknowledgements.markdown */,
+				FAC88C46C4A1EB65B745D62862C65C18 /* Pods-AnimatedSwitch_Tests-acknowledgements.plist */,
+				0085AADCA5DD77B17E6A602C51CBD194 /* Pods-AnimatedSwitch_Tests-dummy.m */,
+				6BBDA7FB2EC44BA00D67054B2BEB577E /* Pods-AnimatedSwitch_Tests-frameworks.sh */,
+				C9C14A09B3F6C1F59CC62027245C09CB /* Pods-AnimatedSwitch_Tests-resources.sh */,
+				5C49EA012ADB42CD5456EAE276218117 /* Pods-AnimatedSwitch_Tests-umbrella.h */,
+				167742C98909693520D90E2A47123B3D /* Pods-AnimatedSwitch_Tests.debug.xcconfig */,
+				26FA60F30A44A15C80A14C420F400ED9 /* Pods-AnimatedSwitch_Tests.release.xcconfig */,
+			);
+			name = "Pods-AnimatedSwitch_Tests";
+			path = "Target Support Files/Pods-AnimatedSwitch_Tests";
+			sourceTree = "<group>";
+		};
+		9479F9D4BB3C12D5DF9DC797A3DF9AF0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				703AF3DB42D485DC67CEB3DEBA11A978 /* AnimatedSwitch.modulemap */,
+				4D6ABE9B9B93F6B88AE4FD86EC6190F2 /* AnimatedSwitch.xcconfig */,
+				BEFAA63D239F0521D29CE42BB7E987F9 /* AnimatedSwitch-dummy.m */,
+				6003C25A9DDA9DDF96BE59645C010875 /* AnimatedSwitch-prefix.pch */,
+				296405A91D9CE827DEB6DCF4F565B7D4 /* AnimatedSwitch-umbrella.h */,
+				1579B0CBD66B2F209C92D6F54CCAB469 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/AnimatedSwitch";
+			sourceTree = "<group>";
+		};
+		AC176F86FFEC8FD4ABEFD928FC94781C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				222B8C7F6629174BBA5368498E8D1D0D /* AnimatedSwitch.framework */,
+				2E13D20B42CA6424E2363882A89BFCB4 /* Pods_AnimatedSwitch_Example.framework */,
+				5D9CB5874C151DE6647EB63F2F836B3D /* Pods_AnimatedSwitch_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E52BC33DBE41E57503B2ED447123C3EF /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12E8264681CEB21B525EE408F102B1F2 /* AnimatedSwitch */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1BC1B22AEA7AA83479745D235D3959DF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9330622A5E05310D279973F3F92119E0 /* Pods-AnimatedSwitch_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6992A1B35EA72D9946D16C7C8ACFDC94 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E67F56465903D862EC3AC7EA2807C9E /* AnimatedSwitch-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF9947B044643E12943A772ECB92385 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78D7C45188E43264F29D9B6AAF45C240 /* Pods-AnimatedSwitch_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3C220E6373F2E48A68FC34D5988D6C67 /* AnimatedSwitch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BD2D7B11CB528363ED598E8C28B746E /* Build configuration list for PBXNativeTarget "AnimatedSwitch" */;
+			buildPhases = (
+				1E918AF5DC91BAAC941EAA5428263311 /* Sources */,
+				81F0587FF77E0D4D00985F6370E622E6 /* Frameworks */,
+				6992A1B35EA72D9946D16C7C8ACFDC94 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnimatedSwitch;
+			productName = AnimatedSwitch;
+			productReference = 222B8C7F6629174BBA5368498E8D1D0D /* AnimatedSwitch.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7BA88FB2683E2E1BD33EB2E2479D6DB0 /* Pods-AnimatedSwitch_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55F0C4A712C6E2A59AA7613456C892E4 /* Build configuration list for PBXNativeTarget "Pods-AnimatedSwitch_Example" */;
+			buildPhases = (
+				2309AB1608A8D42D62C9C0B2DABFD8A9 /* Sources */,
+				8DB3118CCA241F4C8119E6FB1DF2AAA6 /* Frameworks */,
+				1BC1B22AEA7AA83479745D235D3959DF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1758DE8C28BDF124A0A716C1A024C0A1 /* PBXTargetDependency */,
+			);
+			name = "Pods-AnimatedSwitch_Example";
+			productName = "Pods-AnimatedSwitch_Example";
+			productReference = 2E13D20B42CA6424E2363882A89BFCB4 /* Pods_AnimatedSwitch_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A01953D1C97CB6E41A2C60EB9B54821F /* Pods-AnimatedSwitch_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E093AF15A6CEE101F27CD5FDC5673B1 /* Build configuration list for PBXNativeTarget "Pods-AnimatedSwitch_Tests" */;
+			buildPhases = (
+				81402DE5930C3BE4097185E3E44D7286 /* Sources */,
+				2559C748EC4BA1A46FD2E104D10771C0 /* Frameworks */,
+				ECF9947B044643E12943A772ECB92385 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				393844439DCCD6ED1883641E894181CF /* PBXTargetDependency */,
+			);
+			name = "Pods-AnimatedSwitch_Tests";
+			productName = "Pods-AnimatedSwitch_Tests";
+			productReference = 5D9CB5874C151DE6647EB63F2F836B3D /* Pods_AnimatedSwitch_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = AC176F86FFEC8FD4ABEFD928FC94781C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C220E6373F2E48A68FC34D5988D6C67 /* AnimatedSwitch */,
+				7BA88FB2683E2E1BD33EB2E2479D6DB0 /* Pods-AnimatedSwitch_Example */,
+				A01953D1C97CB6E41A2C60EB9B54821F /* Pods-AnimatedSwitch_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E918AF5DC91BAAC941EAA5428263311 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0EACBFE2183678C0061CB26 /* AnimatedSwitch.swift in Sources */,
+				8EABCBB89CD8B4A9C0500221271EA9CA /* AnimatedSwitch-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2309AB1608A8D42D62C9C0B2DABFD8A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				356E8F25E95D5325B60033E4FFC924E0 /* Pods-AnimatedSwitch_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81402DE5930C3BE4097185E3E44D7286 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3C32C9DBDC6F48F3936EF188E32AEA8 /* Pods-AnimatedSwitch_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1758DE8C28BDF124A0A716C1A024C0A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AnimatedSwitch;
+			target = 3C220E6373F2E48A68FC34D5988D6C67 /* AnimatedSwitch */;
+			targetProxy = C35D4A7B376760B95C4C9D6D691B39E6 /* PBXContainerItemProxy */;
+		};
+		393844439DCCD6ED1883641E894181CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-AnimatedSwitch_Example";
+			target = 7BA88FB2683E2E1BD33EB2E2479D6DB0 /* Pods-AnimatedSwitch_Example */;
+			targetProxy = 6E554729C1B917F2596816588504D458 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		43948EAA9A903CCA338C0A10D4DD91F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D6ABE9B9B93F6B88AE4FD86EC6190F2 /* AnimatedSwitch.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AnimatedSwitch/AnimatedSwitch-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AnimatedSwitch/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AnimatedSwitch/AnimatedSwitch.modulemap";
+				PRODUCT_MODULE_NAME = AnimatedSwitch;
+				PRODUCT_NAME = AnimatedSwitch;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B23A712CD807B84BEBC758B82219B549 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45027AF41908E402C9DB1FCA39919CA3 /* Pods-AnimatedSwitch_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AnimatedSwitch_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AnimatedSwitch_Example/Pods-AnimatedSwitch_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B42B54097A876E8A982CBF5DAA91B1AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		BBB73DF770F7068B481D3AC3EBFEEAC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26FA60F30A44A15C80A14C420F400ED9 /* Pods-AnimatedSwitch_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AnimatedSwitch_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AnimatedSwitch_Tests/Pods-AnimatedSwitch_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C67E281A17BCD67F4E2F4DF04A69BDF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D177EF90F38C1F3DE621B9A9ED73BDAA /* Pods-AnimatedSwitch_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AnimatedSwitch_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AnimatedSwitch_Example/Pods-AnimatedSwitch_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D7BD1591E11781E065CCE7874DA6E216 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 167742C98909693520D90E2A47123B3D /* Pods-AnimatedSwitch_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AnimatedSwitch_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AnimatedSwitch_Tests/Pods-AnimatedSwitch_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FFA990A0808241F224C9185180283C96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D6ABE9B9B93F6B88AE4FD86EC6190F2 /* AnimatedSwitch.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AnimatedSwitch/AnimatedSwitch-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AnimatedSwitch/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AnimatedSwitch/AnimatedSwitch.modulemap";
+				PRODUCT_MODULE_NAME = AnimatedSwitch;
+				PRODUCT_NAME = AnimatedSwitch;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0BD2D7B11CB528363ED598E8C28B746E /* Build configuration list for PBXNativeTarget "AnimatedSwitch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43948EAA9A903CCA338C0A10D4DD91F3 /* Debug */,
+				FFA990A0808241F224C9185180283C96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */,
+				B42B54097A876E8A982CBF5DAA91B1AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55F0C4A712C6E2A59AA7613456C892E4 /* Build configuration list for PBXNativeTarget "Pods-AnimatedSwitch_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B23A712CD807B84BEBC758B82219B549 /* Debug */,
+				C67E281A17BCD67F4E2F4DF04A69BDF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E093AF15A6CEE101F27CD5FDC5673B1 /* Build configuration list for PBXNativeTarget "Pods-AnimatedSwitch_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7BD1591E11781E065CCE7874DA6E216 /* Debug */,
+				BBB73DF770F7068B481D3AC3EBFEEAC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

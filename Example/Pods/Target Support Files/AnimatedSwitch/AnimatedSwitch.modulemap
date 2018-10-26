@@ -1,0 +1,6 @@
+framework module AnimatedSwitch {
+  umbrella header "AnimatedSwitch-umbrella.h"
+
+  export *
+  module * { export * }
+}
